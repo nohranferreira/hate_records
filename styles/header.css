@@ -1,0 +1,119 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+
+.menu-hamburguer {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	background: none;
+	border: none;
+	padding: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+.bar {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin: 4px 0;
+	transition: 0.4s;
+}
+.cabecalho {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	background-color: #111111;
+	border-bottom: 1px solid #ff0000;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.cabecalho__logo {
+	padding-left: 5rem;
+}
+
+.cabecalho__menu-lista {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding-right: 5rem;
+}
+
+.cabecalho__menu-lista-link {
+	padding: 0px 10px;
+	text-decoration: none;
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+}
+
+.cabecalho__menu-lista-link i {
+	padding-left: 1rem;
+	align-items: center;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	.cabecalho {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		background-color: #111111;
+		border-bottom: 1px solid #ff0000;
+		border-radius: 0px 0px 10px 10px;
+		z-index: 3;
+	}
+	.cabecalho__logo {
+		padding-left: 1.5rem;
+	}
+	.menu-hamburguer {
+		display: flex;
+		padding-right: 1.5rem;
+	}
+
+	.cabecalho__menu {
+		display: none;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		right: 0;
+		background-color: #111111;
+		border: 1px solid #ff0000;
+		border-radius: 0px 0px 10px 10px;
+		z-index: 2;
+		text-align: center;
+	}
+
+	.cabecalho__menu-lista {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		height: 100%;
+		padding-right: 0;
+		margin: 10px;
+	}
+
+	.cabecalho__menu-lista-link {
+		padding: 30px 0px;
+		text-align: center;
+		align-items: center;
+	}
+
+	.cabecalho__menu-lista-link i {
+		display: none;
+		margin: 10px auto;
+	}
+
+	/* Mostrar o menu quando o botão de hambúrguer é clicado */
+	.menu-hamburguer.active + .cabecalho__menu {
+		display: flex;
+		justify-content: center;
+	}
+}

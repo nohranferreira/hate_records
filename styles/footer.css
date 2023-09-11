@@ -1,0 +1,81 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #111111;
+	padding: 20px;
+	height: 100px;
+	border-top: 1px solid #ff0000;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.rodape {
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.rodape__menu-lista {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 2rem;
+	font-size: 25px;
+}
+
+.rodape__menu-lista-link {
+	padding: 0px 10px;
+	text-decoration: none;
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+}
+
+.rodape__menu-lista-link i {
+	padding-left: 1rem;
+	align-items: center;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: #111111;
+		padding: 20px 20px;
+		height: 100px;
+		border-top: 1px solid #ff0000;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	.rodape__menu-lista {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		padding-bottom: 2rem;
+		font-size: 20px;
+	}
+	.rodape__menu-lista-link {
+		padding: 0px 10px;
+		text-decoration: none;
+		color: #fff;
+		font-family: "Oswald", sans-serif;
+		font-weight: 400;
+	}
+
+	.rodape__menu-lista-link i {
+		padding-left: 0.5rem;
+		align-items: center;
+		text-align: center;
+	}
+}
