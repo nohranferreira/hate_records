@@ -37,6 +37,10 @@ footer {
 	font-family: "Oswald", sans-serif;
 	font-weight: 600;
 }
+.rodape__menu-lista-link:hover {
+	color: #ff0000;
+	transition: 0.3s;
+}
 
 .rodape__menu-lista-link i {
 	padding-left: 1rem;
@@ -71,6 +75,10 @@ footer {
 		color: #fff;
 		font-family: "Oswald", sans-serif;
 		font-weight: 400;
+	}
+	.rodape__menu-lista-link:hover {
+		color: #ff0000;
+		transition: 0.3s;
 	}
 
 	.rodape__menu-lista-link i {
